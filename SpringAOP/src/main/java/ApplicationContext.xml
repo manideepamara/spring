@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:aop="http://www.springframework.org/schema/aop"   
+       xsi:schemaLocation="http://www.springframework.org/schema/beans   
+       http://www.springframework.org/schema/beans/spring-beans.xsd   
+       http://www.springframework.org/schema/aop   
+       http://www.springframework.org/schema/aop/spring-aop.xsd">  
+  
+
+   <!-- Initialization for data source -->
+   <bean id ="empMan" class="com.training.org.EmployeeManager"></bean>
+   <bean id="empCrud" class="com.training.org.EmployeeCRUDAspect"></bean>
+   <bean id="emp" class="com.training.org.Employee">
+	   	<property name="id" value="123">
+	   	</property>
+	   	<property name="name" value="manideeep"></property>
+	   	<property name="salary" value="200000"></property>
+   </bean>
+   <bean  id="empTrack" class="com.training.org.EmployeeTracker"></bean>
+   <bean class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator"></bean>  
+</beans>

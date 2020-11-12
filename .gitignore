@@ -1,5 +1,6 @@
 /apache/
-
+/grafana-7.3.2/
 /.metadata/
 
 /libs/
+/prometheus-2.22.1.windows-amd64/

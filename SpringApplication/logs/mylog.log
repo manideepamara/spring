@@ -1,0 +1,203 @@
+2020-11-12 11:52:06.376 DEBUG 8312 --- [http-nio-6060-exec-1] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-6060-exec-1] latch=2
+2020-11-12 11:52:06.377 DEBUG 8312 --- [http-nio-6060-exec-1] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@945e6ee].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@285c471f:org.apache.tomcat.util.net.NioChannel@28bcf968:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56051]])
+2020-11-12 11:52:06.378 DEBUG 8312 --- [http-nio-6060-exec-1] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-6060-exec-1] latch=1
+2020-11-12 11:52:06.378 DEBUG 8312 --- [http-nio-6060-exec-1] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@945e6ee].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@a970ed2:org.apache.tomcat.util.net.NioChannel@3bd8d9e:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56052]])
+2020-11-12 11:52:06.454 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162126454 sessioncount 0
+2020-11-12 11:52:06.454 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-11-12 11:52:07.895 DEBUG 8312 --- [http-nio-6060-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-6060-Acceptor] latch=1
+2020-11-12 11:52:07.904 DEBUG 8312 --- [http-nio-6060-Acceptor] o.apache.tomcat.util.threads.LimitLatch  : Counting up[http-nio-6060-Acceptor] latch=2
+2020-11-12 11:52:07.908 DEBUG 8312 --- [http-nio-6060-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position() [0]
+2020-11-12 11:52:07.909 DEBUG 8312 --- [http-nio-6060-exec-3] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@588cdc0d:org.apache.tomcat.util.net.NioChannel@28bcf968:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56054]], Read from buffer: [0]
+2020-11-12 11:52:07.911 DEBUG 8312 --- [http-nio-6060-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@588cdc0d:org.apache.tomcat.util.net.NioChannel@28bcf968:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56054]], Read direct from socket: [531]
+2020-11-12 11:52:07.912 DEBUG 8312 --- [http-nio-6060-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received [GET / HTTP/1.1
+Host: localhost:6060
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.183 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+
+]
+2020-11-12 11:52:07.918 DEBUG 8312 --- [http-nio-6060-exec-3] o.a.c.authenticator.AuthenticatorBase    : Security checking request GET /
+2020-11-12 11:52:07.918 DEBUG 8312 --- [http-nio-6060-exec-3] org.apache.catalina.realm.RealmBase      :   No applicable constraints defined
+2020-11-12 11:52:07.918 DEBUG 8312 --- [http-nio-6060-exec-3] o.a.c.authenticator.AuthenticatorBase    : Not subject to any constraint
+2020-11-12 11:52:07.920 DEBUG 8312 --- [http-nio-6060-exec-3] org.apache.tomcat.util.http.Parameters   : Set encoding to UTF-8
+2020-11-12 11:52:07.921 DEBUG 8312 --- [http-nio-6060-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-11-12 11:52:07.922 DEBUG 8312 --- [http-nio-6060-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.training.org.Application#getDetails()
+2020-11-12 11:52:07.923 DEBUG 8312 --- [http-nio-6060-exec-3] com.training.org.Application             : This is DEBUG Message
+2020-11-12 11:52:07.924  INFO 8312 --- [http-nio-6060-exec-3] com.training.org.Application             : This is Infor message
+2020-11-12 11:52:07.924  WARN 8312 --- [http-nio-6060-exec-3] com.training.org.Application             : This is warn message
+2020-11-12 11:52:07.924 ERROR 8312 --- [http-nio-6060-exec-3] com.training.org.Application             : This is error message
+2020-11-12 11:52:07.931 DEBUG 8312 --- [http-nio-6060-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2020-11-12 11:52:07.931 DEBUG 8312 --- [http-nio-6060-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["
+host@gmail.com
+9090
+mailer@gmail.com
+[abc@gmail.com, pqr@gmail.com, xyz@gmail.com]
+DatabasePropert (truncated)...]
+2020-11-12 11:52:07.934 DEBUG 8312 --- [http-nio-6060-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-11-12 11:52:07.936 DEBUG 8312 --- [http-nio-6060-exec-3] o.a.coyote.http11.Http11InputBuffer      : Before fill(): [true], parsingRequestLine: [true], parsingRequestLinePhase: [0], parsingRequestLineStart: [0], byteBuffer.position() [0]
+2020-11-12 11:52:07.937 DEBUG 8312 --- [http-nio-6060-exec-3] o.a.tomcat.util.net.SocketWrapperBase    : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@588cdc0d:org.apache.tomcat.util.net.NioChannel@28bcf968:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56054]], Read from buffer: [0]
+2020-11-12 11:52:07.938 DEBUG 8312 --- [http-nio-6060-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@588cdc0d:org.apache.tomcat.util.net.NioChannel@28bcf968:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56054]], Read direct from socket: [0]
+2020-11-12 11:52:07.938 DEBUG 8312 --- [http-nio-6060-exec-3] o.a.coyote.http11.Http11InputBuffer      : Received []
+2020-11-12 11:52:07.938 DEBUG 8312 --- [http-nio-6060-exec-3] o.apache.coyote.http11.Http11Processor   : Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@588cdc0d:org.apache.tomcat.util.net.NioChannel@28bcf968:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56054]], Status in: [OPEN_READ], State out: [OPEN]
+2020-11-12 11:52:07.939 DEBUG 8312 --- [http-nio-6060-exec-3] org.apache.tomcat.util.net.NioEndpoint   : Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@588cdc0d:org.apache.tomcat.util.net.NioChannel@28bcf968:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56054]]
+2020-11-12 11:53:06.466 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162186466 sessioncount 0
+2020-11-12 11:53:06.467 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-11-12 11:53:07.947 DEBUG 8312 --- [http-nio-6060-exec-4] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-6060-exec-4] latch=2
+2020-11-12 11:53:07.948 DEBUG 8312 --- [http-nio-6060-exec-5] o.apache.tomcat.util.threads.LimitLatch  : Counting down[http-nio-6060-exec-5] latch=1
+2020-11-12 11:53:07.949 DEBUG 8312 --- [http-nio-6060-exec-4] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@945e6ee].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@1b436762:org.apache.tomcat.util.net.NioChannel@3bd8d9e:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56053]])
+2020-11-12 11:53:07.949 DEBUG 8312 --- [http-nio-6060-exec-5] org.apache.tomcat.util.net.NioEndpoint   : Calling [org.apache.tomcat.util.net.NioEndpoint@945e6ee].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@588cdc0d:org.apache.tomcat.util.net.NioChannel@28bcf968:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:6060 remote=/[0:0:0:0:0:0:0:1]:56054]])
+2020-11-12 11:54:06.486 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162246486 sessioncount 0
+2020-11-12 11:54:06.488 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2020-11-12 11:55:06.496 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162306496 sessioncount 0
+2020-11-12 11:55:06.498 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-11-12 11:56:06.506 DEBUG 8312 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162366506 sessioncount 0
+2020-11-12 11:56:06.506 DEBUG 8312 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 0 expired sessions: 0
+2020-11-12 11:57:06.515 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162426513 sessioncount 0
+2020-11-12 11:57:06.517 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 4 expired sessions: 0
+2020-11-12 11:58:06.525 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162486525 sessioncount 0
+2020-11-12 11:58:06.527 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2020-11-12 11:59:06.536 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162546536 sessioncount 0
+2020-11-12 11:59:06.538 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2020-11-12 12:00:06.543 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162606543 sessioncount 0
+2020-11-12 12:00:06.546 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2020-11-12 12:01:06.551 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162666551 sessioncount 0
+2020-11-12 12:01:06.553 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2020-11-12 12:02:06.564 DEBUG 8312 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162726563 sessioncount 0
+2020-11-12 12:02:06.566 DEBUG 8312 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 3 expired sessions: 0
+2020-11-12 12:03:06.573 DEBUG 8312 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162786573 sessioncount 0
+2020-11-12 12:03:06.574 DEBUG 8312 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-11-12 12:04:06.588 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162846588 sessioncount 0
+2020-11-12 12:04:06.590 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-11-12 12:05:06.603 DEBUG 8312 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162906603 sessioncount 0
+2020-11-12 12:05:06.604 DEBUG 8312 --- [Catalina-utility-2] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-11-12 12:06:06.610 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605162966610 sessioncount 0
+2020-11-12 12:06:06.612 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2020-11-12 12:07:06.640 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605163026640 sessioncount 0
+2020-11-12 12:07:06.642 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2020-11-12 12:08:06.654 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605163086654 sessioncount 0
+2020-11-12 12:08:06.656 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-11-12 12:09:06.765 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605163146765 sessioncount 0
+2020-11-12 12:09:06.768 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 2 expired sessions: 0
+2020-11-12 12:10:06.775 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605163206775 sessioncount 0
+2020-11-12 12:10:06.777 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-11-12 12:11:06.782 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : Start expire sessions StandardManager at 1605163266782 sessioncount 0
+2020-11-12 12:11:06.783 DEBUG 8312 --- [Catalina-utility-1] org.apache.catalina.session.ManagerBase  : End expire sessions StandardManager processingTime 1 expired sessions: 0
+2020-11-12 12:11:39.911 DEBUG 8312 --- [File Watcher] o.s.boot.devtools.restart.Restarter      : Restarting application
+2020-11-12 12:11:39.951 DEBUG 8312 --- [Thread-5] o.s.boot.devtools.restart.Restarter      : Stopping application
+2020-11-12 12:11:39.954 DEBUG 8312 --- [Thread-5] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@566a977e, started on Thu Nov 12 11:40:58 IST 2020
+2020-11-12 12:11:39.975 DEBUG 8312 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-11-12 12:11:39.983 DEBUG 8312 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerGracefulShutdown' completed its stop procedure
+2020-11-12 12:11:39.984 DEBUG 8312 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483646
+2020-11-12 12:11:40.316 DEBUG 8312 --- [Thread-5] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerStartStop' completed its stop procedure
+2020-11-12 12:11:40.318  INFO 8312 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-12 12:11:40.433 DEBUG 8312 --- [Thread-5] o.s.boot.devtools.restart.Restarter      : Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7f297cec
+2020-11-12 12:11:40.434 DEBUG 8312 --- [Thread-5] o.s.boot.devtools.restart.Restarter      : Starting application com.training.org.Application with URLs [file:/C:/Users/user280/Desktop/Spring/SpringApplication/target/classes/]
+2020-11-12 14:47:06.906 ERROR 15324 --- [http-nio-6060-exec-10] com.training.org.Application             : This is error message
+2020-11-12 15:00:15.065 ERROR 3040 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 6060 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6060 or configure this application to listen on another port.
+
+2020-11-12 15:00:46.257 ERROR 8416 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 6060 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6060 or configure this application to listen on another port.
+
+2020-11-12 15:01:33.004 ERROR 1044 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 6060 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6060 or configure this application to listen on another port.
+
+2020-11-12 15:02:51.495 ERROR 15324 --- [http-nio-6060-exec-7] com.training.org.Application             : This is error message
+2020-11-12 15:03:36.718 ERROR 736 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 6060 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6060 or configure this application to listen on another port.
+
+2020-11-12 15:07:16.770 ERROR 15324 --- [http-nio-6060-exec-1] com.training.org.Application             : This is error message
+2020-11-12 15:09:24.821 ERROR 5276 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 6060 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6060 or configure this application to listen on another port.
+
+2020-11-12 15:09:26.646 ERROR 13688 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 6060 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6060 or configure this application to listen on another port.
+
+2020-11-12 15:11:02.838 ERROR 1036 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 6060 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 6060 or configure this application to listen on another port.
+
+2020-11-12 15:51:48.280 ERROR 3476 --- [http-nio-6060-exec-1] com.training.org.Application             : This is error message
